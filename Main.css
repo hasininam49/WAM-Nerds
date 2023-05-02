@@ -77,13 +77,13 @@ svg::hover{
     animation: up-and-down 1s infinite;
 }
 #WAM{
-    font-size: 90px;
+    font-size: 100px;
     font-style: initial;
     font-weight: lighter;
     font-family: 'DynaPuff', cursive;
 }
 #NERDS{
-    font-size: 35px;
+    font-size: 30px;
     font-style: initial;
     font-weight: lighter;
     font-family: 'Patrick Hand', cursive;
@@ -101,9 +101,11 @@ svg::hover{
     position: center;
 }
 
-#WonAstMar{
+.WonAstMar{
     font-family: 'Handlee', cursive;
-    font-size:xx-large;
+    font-size: 40px;
+    display:inline-block ;
+    margin: 20px;
 }
 /**
 Options:
@@ -148,3 +150,7 @@ font-family: 'DynaPuff', cursive;
     font-family: 'Bruno Ace', cursive;
     font-family: 'El Messiri', sans-serif;
      **/
+
+    #login{
+        background-color: black;
+    }
