@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alice&family=Alkatra&family=Audiowide&family=Bruno+Ace&family=Carter+One&family=Caveat:wght@400;500&family=Comme&family=Concert+One&family=Cookie&family=Dancing+Script:wght@500&family=Darumadrop+One&family=DynaPuff&family=El+Messiri&family=Foldit&family=Gloria+Hallelujah&family=Great+Vibes&family=Gruppo&family=Handlee&family=Kalam:wght@300;400&family=Kosugi+Maru&family=Lemonada:wght@300;400&family=Lobster&family=Merienda:wght@300;400&family=Montserrat+Alternates&family=Neucha&family=Nova+Oval&family=Oleo+Script&family=Pacifico&family=Patrick+Hand&family=Poiret+One&family=Quicksand:wght@300;400&family=Raleway&family=Rock+Salt&family=Rubik+Dirt&family=Rubik+Distressed&family=Rubik+Marker+Hatch&family=Satisfy&family=Shadows+Into+Light&family=Shrikhand&family=Sigmar&family=Sofia+Sans+Condensed:wght@300;400&family=Yatra+One&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: proxim;
+}
+body{
+    overflow-x: hidden;
+    margin:1px;
+    padding: 1px;;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    scrollbar-width: 1px; /** For firfox**/
+    scrollbar-color: transparent transparent; 
+    box-sizing: border-box;
+    scrollbar-gutter: stable both-edges;
+}
+/* Webkit-based browsers (Chrome, Safari, etc.) */
+body::-webkit-scrollbar {
+    width: 6px; /* Adjust width as needed */
+}
+
+body::-webkit-scrollbar-track { 
+    -webkit-box-shadow: inset 0 0 6px rgba(96, 96, 96, 0.08);
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.203);
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+    border-top: 1px;
+    border:rgba(0, 94, 96, 0.699) ;
+    bottom:0;
+    z-index: index 1;;
+    background-image:   radial-gradient(circle at 20% 15%, rgb(110,207,241), rgba(255, 255, 255, 0) 40%), 
+                        radial-gradient(circle at 50% 75%, rgb(211,124,179),#ffffff00 40%),
+                        radial-gradient(circle at 45% 80%, rgb(250,211,196),#ffffff00  55%),
+                        radial-gradient(circle at 80% 50%, rgb(250,211,196),#ffffff00 50%),
+                        radial-gradient(circle at 20% 10%, rgb(199,217,223),#ffffff00 40%),
+                        radial-gradient(circle at 70% 30%, rgb(135, 242, 213),#ffffff00 40%),
+                        radial-gradient(circle at 35% 80%, rgb(135, 242, 213),#ffffff00 60%),
+                        radial-gradient(circle at 75% 80%, rgb(250,211,196),#ffffff00  55%)
+;
+    background-position: center;    
+    background-blend-mode: lighten;
+    background-blend-mode:color;
+    justify-content: center;
+    display: flex;
+    scroll-snap-type: proximity;
+}
+
+#MainWAM{
+    position:relative;
+    z-index:1;
+    width: 80%;
+    height: 100%;
+    margin-top:15%;
+    margin-bottom:20%;
+    text-align: center;
+    
+}
+
+#WAM{
+    font-size: 100px;
+    font-style: initial;
+    font-weight: lighter;
+    font-family: 'DynaPuff', cursive;
+}
+#NERDS{
+    font-size: 30px;
+    font-style: initial;
+    font-weight: lighter;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    margin-top:-190px;
+}
+#Title{
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+
+}
+
+#downarrow{
+    position: center;
+}
+
+.WonAstMar{
+    font-family: 'Handlee', cursive;
+    font-size: 40px;
+    display:inline-block;
+}
+#targetDiv{
+    position: relative;
+    z-index: 0;
+    width: auto;
+    height: auto;
+    padding: 10%;
+    text-align: center;
+}
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+#motto{   
+    font-family: 'Comme', sans-serif;
+}
+.stages{
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+}
+/**
+Options:
+font-family: 'DynaPuff', cursive;
+        font-family: 'Alice', serif;
+        font-family: 'Caveat', cursive;
+        font-family: 'Concert One', cursive;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Merienda', cursive;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Patrick Hand', cursive;
+        font-family: 'Quicksand', sans-serif;
+        
+**/
+
+/** Simple:
+    font-family: 'Aboreto', cursive;'
+    font-family: 'Comme', sans-serif;
+    font-family: 'Gruppo', cursive;
+        font-family: 'Handlee', cursive;
+        font-family: 'Patrick Hand', cursive;
+        font-family: 'Quicksand', sans-serif;
+     **/
+
+/** Idk/maybe:
+    font-family: 'Alkatra', cursive;
+        font-family: 'Darumadrop One', cursive;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-family: 'Kalam', cursive;
+        font-family: 'Kosugi Maru', sans-serif;
+        font-family: 'Lemonada', cursive;
+        font-family: 'Lobster', cursive;
+        font-family: 'Oleo Script', cursive;
+        font-family: 'Rock Salt', cursive;
+        font-family: 'Satisfy', cursive;
+        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Shadows Into Light', cursive;
+ **/
+
+/** Sciencey Spacey vibe:
+    font-family: 'Audiowide', cursive;
+    font-family: 'Bruno Ace', cursive;
+    font-family: 'El Messiri', sans-serif;
+     **/
+#downarrow{
+    background-color: rgb(0, 0, 0,0);
+    border-width: 0;
+}
+/**Nav css**/
+
+.navbar{
+    background-color: rgba(0, 94, 96, 0.623);
+    width: 100%;
+    height:auto;
+    align-items: flex-start;
+    position: fixed;
+    z-index: 1;
+    margin: 0%;
+    padding: 0%;
+    z-index: 10;
+  
+  /**  margin:1px;**/
+}
+/**#SearchButton{
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(238, 165, 165);
+}**/
+.Nav_Text_A{
+    color:aliceblue;
+    font-size: 1.5vw;
+}
+.Nav_Text_A:hover{
+    font-size: larger;
+    color:aliceblue;
+}
+#Branding{
+    margin:-3px;
+    margin-right:1px; 
+}
+/**.Search_Engine{
+    position:absolute;
+}**/
+#NavLogo{
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+/** End of Nav **/ 
+
+
+/**About Us page**/
+#AboutUs{
+    position: absolute;
+    bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+
