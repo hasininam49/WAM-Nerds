@@ -1,4 +1,4 @@
-
+var uuid = 'ad00196d-5e01-47af-b6c8-785a4d242e18';
 
 
 var alerted = localStorage.getItem('alerted') || '';
