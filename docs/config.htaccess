@@ -1,3 +1,4 @@
 RewriteEngine On
-RewriteRule ^wamnerds/index\.html$ /wamnerds/ [L,R=301]
+RewriteRule ^index\.html$ / [L,R=301]
 RewriteRule ^aboutus\.html$ /aboutus [L,R=301]
+
