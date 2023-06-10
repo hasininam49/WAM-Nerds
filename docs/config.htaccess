@@ -1,3 +1,5 @@
+LoadModule rewrite_module modules/mod_rewrite.so
+
 RewriteEngine On
 RewriteRule ^index\.html$ / [L,R=301]
 RewriteRule ^aboutus\.html$ /aboutus [L,R=301]
