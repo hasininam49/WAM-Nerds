@@ -119,53 +119,12 @@ h2{
     font-size: large;
     font-family: 'Raleway', sans-serif;
 }
-/**
-Options:
-font-family: 'DynaPuff', cursive;
-        font-family: 'Alice', serif;
-        font-family: 'Caveat', cursive;
-        font-family: 'Concert One', cursive;
-        font-family: 'Dancing Script', cursive;
-        font-family: 'Merienda', cursive;
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-family: 'Patrick Hand', cursive;
-        font-family: 'Quicksand', sans-serif;
-        
-**/
 
-/** Simple:
-    font-family: 'Aboreto', cursive;'
-    font-family: 'Comme', sans-serif;
-    font-family: 'Gruppo', cursive;
-        font-family: 'Handlee', cursive;
-        font-family: 'Patrick Hand', cursive;
-        font-family: 'Quicksand', sans-serif;
-     **/
-
-/** Idk/maybe:
-    font-family: 'Alkatra', cursive;
-        font-family: 'Darumadrop One', cursive;
-        font-family: 'Gloria Hallelujah', cursive;
-        font-family: 'Kalam', cursive;
-        font-family: 'Kosugi Maru', sans-serif;
-        font-family: 'Lemonada', cursive;
-        font-family: 'Lobster', cursive;
-        font-family: 'Oleo Script', cursive;
-        font-family: 'Rock Salt', cursive;
-        font-family: 'Satisfy', cursive;
-        font-family: 'Shadows Into Light', cursive;
-        font-family: 'Shadows Into Light', cursive;
- **/
-
-/** Sciencey Spacey vibe:
-    font-family: 'Audiowide', cursive;
-    font-family: 'Bruno Ace', cursive;
-    font-family: 'El Messiri', sans-serif;
-     **/
 #downarrow{
     background-color: rgb(0, 0, 0,0);
     border-width: 0;
 }
+
 /**Nav css**/
 
 .navbar{
@@ -178,18 +137,17 @@ font-family: 'DynaPuff', cursive;
     margin: 0%;
     padding: 0%;
     z-index: 10;
-  
-  /**  margin:1px;**/
 }
-/**#SearchButton{
-    border-radius: 5px;
-    border: 0px;
-    background-color: rgb(238, 165, 165);
-}**/
 .Nav_Text_A{
     color:aliceblue;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
+@media (max-width:767px){
+    .Nav_Text_A{
+font-size: 20px;
+    }
+}
+
 .Nav_Text_A:hover{
     font-size: larger;
     color:aliceblue;
@@ -198,11 +156,7 @@ font-family: 'DynaPuff', cursive;
     margin:-3px;
     margin-right:1px; 
 }
-/**.Search_Engine{
-    position:absolute;
-}**/
-#NavLogo{
-}
+
 .dropdown:hover .dropdown-menu {
     display: block;
   }
