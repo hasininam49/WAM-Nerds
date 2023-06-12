@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "TheWAMnerds"
+    "liveServer.settings.multiRootWorkspaceName": "TheWAMnerds",
+    "prettier.requireConfig": false
 }
