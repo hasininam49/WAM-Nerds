@@ -31,7 +31,9 @@ var ShareCode = `
 
 // Function to load the shared code into the specified element
 function loadShareCode() {
-    var placeholder = document.getElementById('MyNa');
+    var placeholder = document.getElementById('MyNav');
     placeholder.innerHTML = ShareCode;
+}
+
 }
 
