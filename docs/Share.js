@@ -1,5 +1,5 @@
 // This is the shared code
-var nav = `
+var ShareCode = `
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand Nav_Text_A" href="index.html" style="color:aliceblue;" id="Branding">
@@ -30,8 +30,8 @@ var nav = `
 </nav>`;
 
 // Function to load the shared code into the specified element
-function loadnav() {
+function loadShareCode() {
     var placeholder = document.getElementById('MyNa');
-    placeholder.innerHTML = nav;
+    placeholder.innerHTML = ShareCode;
 }
 
