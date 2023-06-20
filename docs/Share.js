@@ -34,6 +34,5 @@ function loadShareCode() {
     var placeholder = document.getElementById('MyNav');
     placeholder.innerHTML = ShareCode;
 }
-
 }
 
