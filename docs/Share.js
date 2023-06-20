@@ -35,5 +35,5 @@ function loadShareCode() {
     placeholder.innerHTML = ShareCode;
 }
 
-}
+
 
