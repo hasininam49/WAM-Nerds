@@ -1,8 +1,10 @@
+console.log('JavaScript file is for html sharing is loaded.');
+
 var ShareCode = `
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand Nav_Text_A" href="index.html" style="color:aliceblue;" id="Branding">
-            <img src="favicon.ico" width="50px" height="50px" id="NavLogo">
+            <img src="../assets/favicon.ico" width="50px" height="50px" id="NavLogo">
             TheWAMnerds
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

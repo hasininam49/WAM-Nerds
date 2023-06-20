@@ -1,4 +1,4 @@
-
+console.log('JavaScript file is loaded.');
 
 var alerted = localStorage.getItem('alerted') || '';
 if (alerted != 'yes') {
