@@ -1,4 +1,3 @@
-// This is the shared code
 var ShareCode = `
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -29,11 +28,10 @@ var ShareCode = `
     </div>
 </nav>`;
 
-// Function to load the shared code into the specified element
 function loadShareCode() {
-    var placeholder = document.getElementById('MyNav');
-    placeholder.innerHTML = ShareCode;
+    var body = document.getElementsByTagName('body')[0];
+    body.insertAdjacentHTML('afterbegin', ShareCode);
 }
 
-
-
+// Call loadShareCode after DOM has loaded
+document.addEventListener('DOMContentLoaded', loadShareCode);
