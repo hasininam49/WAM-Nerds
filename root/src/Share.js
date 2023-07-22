@@ -22,7 +22,7 @@ var ShareCode = `
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Book Reviews</a></li>
                         <li><a class="dropdown-item" href="#">School blogs</a></li>
-                        <li><a class="dropdown-item" href="#"> Perspectives </a></li>
+                        <li><a class="dropdown-item" href="perspectives.html"> Perspectives </a></li>
                     </ul>
                 </li>
             </ul>
