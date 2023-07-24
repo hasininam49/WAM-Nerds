@@ -20,7 +20,7 @@ const account = new Account(client);
 // Register User
 account.create(
     ID.unique(),
-    'thewamnerds.com',
+    'thewamnerds@gmail.com',
     'WAMnerd@49',
     'Hasini Namaduru'
 ).then(response => {
