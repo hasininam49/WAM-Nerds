@@ -10,20 +10,42 @@ else {
     console.log("Already alerted");
 }
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: 'AIzaSyCazKdmZ8R_frkKnMn3_PwEKBh2d93bHns',
-  authDomain: "the-wam-nerds.firebaseapp.com",
-  databaseURL: "https://the-wam-nerds-default-rtdb.firebaseio.com",
-  projectId: "the-wam-nerds",
-  storageBucket: "the-wam-nerds.appspot.com",
-  messagingSenderId: "898296095199",
-  appId: "1:898296095199:web:1a26ab29a47cc01b9ae46a",
-  measurementId: "G-G9H3E4G704"
-};
+const { Client, Account, ID } = Appwrite;
+const client = new Client()
+    .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
+    .setProject('64be9ef6649824b39e93');               // Your project ID
 
-// Initialize Firebase
+const account = new Account(client);
 
-firebase.initializeApp(firebaseConfig);
+// Register User
+account.create(
+    ID.unique(),
+    'thewamnerds.com',
+    'WAMnerd@49',
+    'Hasini Namaduru'
+).then(response => {
+    console.log(response);
+}, error => {
+    console.log(error);
+});
 
+client.subscribe('files', response => {
+    if (response.events.includes('buckets.*.files.*.create')) {
+        // Get the data of the new document
+        const document = response.payload;
 
+        // Retrieve each separate attribute of the document
+        const name = document.Author;
+        const Title = document.Title;
+        const email = document.Email;
+        const DateTime = document.Date-Time ;
+        const content = document.Content;
+        const keypoints = document.KeyPoints;
+
+        // Log the data of the new document
+        console.log(name, Title, email,DateTime,content,keypoints);
+    }
+    else{
+        console.log("not working");
+    }
+});

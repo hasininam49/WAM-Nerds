@@ -4,7 +4,6 @@ module.exports = {
   mode: 'development',
   entry: {
     main: './src/main.js',
-    secondary: './src/Share.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

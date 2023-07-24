@@ -1,6 +1,7 @@
 console.log('JavaScript file is for html sharing is loaded.');
 
 var ShareCode = `
+
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand Nav_Text_A" href="index.html" style="color:aliceblue;" id="Branding">
