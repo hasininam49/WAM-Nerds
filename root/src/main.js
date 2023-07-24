@@ -22,8 +22,7 @@ account.create(
     ID.unique(),
     'thewamnerds@gmail.com',
     'WAMnerd@49',
-    'Hasini Namaduru',
-    'cloud.appwrite.io'
+    'Hasini Namaduru'
 ).then(response => {
     console.log(response);
 }, error => {
