@@ -18,12 +18,14 @@ const client = new Client()
 const account = new Account(client);
 
 // Register User
-account.create(
-    ID.unique(),
-    'thewamnerds@gmail.com',
-    'WAMnerd@49',
-    'Hasini Namaduru'
-).then(response => {
+// Register User
+account.create({
+    id: ID.unique(),
+    email: 'thewamnerds@gmail.com',
+    password: 'WAMnerd@49',
+    name: 'Hasini Namaduru',
+    domain: 'cloud.appwrite.io'
+}).then(response => {
     console.log(response);
 }, error => {
     console.log(error);
