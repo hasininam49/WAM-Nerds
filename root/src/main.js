@@ -20,23 +20,6 @@ const account = new Account(client);
 
 
 // Register User
-account.create({
-    id: ID.unique(),
-    email: 'thewamnerds@gmail.com',
-    password: 'WAMnerd@49',
-    name: 'Hasini Namaduru'
-}).then(response => {
-    console.log(response);
-}, error => {
-    console.log(error);
-});
-
-client.subscribe('files', response => {
-    if(response.events.includes('buckets.*.files.*.create')) {
-        // Log when a new file is uploaded
-        console.log(response.payload);
-    }
-});
 
 
 const databases = new Databases(client);
@@ -73,4 +56,22 @@ database.listDocuments('collection', [
     }
 }).catch(error => {
     console.log(error);
+});
+
+account.create({
+    id: ID.unique(),
+    email: 'thewamnerds@gmail.com',
+    password: 'WAMnerd@49',
+    name: 'Hasini Namaduru'
+}).then(response => {
+    console.log(response);
+}, error => {
+    console.log(error);
+});
+
+client.subscribe('files', response => {
+    if(response.events.includes('buckets.*.files.*.create')) {
+        // Log when a new file is uploaded
+        console.log(response.payload);
+    }
 });
