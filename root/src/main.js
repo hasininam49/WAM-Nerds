@@ -10,12 +10,10 @@ else {
     console.log("Already alerted");
 }
 
-const { Client, Databases, Query } = Appwrite;
 const client = new Client()
     .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('64be9ef6649824b39e93');               // Your project ID
-
-
+const { Client, Databases, Query } = Appwrite;
 const databases = new Databases();
 
 database.listDocuments('collection', [
