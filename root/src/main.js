@@ -10,16 +10,10 @@ else {
     console.log("Already alerted");
 }
 
-const { Client, Account, ID } = Appwrite;
 const { Client, Databases, Query } = Appwrite;
 const client = new Client()
     .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('64be9ef6649824b39e93');               // Your project ID
-
-const account = new Account(client);
-
-
-// Register User
 
 
 const databases = new Databases();
@@ -58,16 +52,6 @@ database.listDocuments('collection', [
     console.log(error);
 });
 
-account.create({
-    id: ID.unique(),
-    email: 'thewamnerds@gmail.com',
-    password: 'WAMnerd@49',
-    name: 'Hasini Namaduru'
-}).then(response => {
-    console.log(response);
-}, error => {
-    console.log(error);
-});
 
 client.subscribe('files', response => {
     if(response.events.includes('buckets.*.files.*.create')) {
