@@ -22,7 +22,7 @@ const account = new Account(client);
 // Register User
 
 
-const databases = new Databases(client);
+const databases = new Databases();
 
 database.listDocuments('collection', [
     Query.equal('title', 'Avatar'),
