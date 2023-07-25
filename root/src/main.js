@@ -52,6 +52,4 @@ databases.listDocuments(collectionId, [
     } else {
         console.log('No documents found');
     }
-}).catch(error => {
-    console.log(error);
 });
