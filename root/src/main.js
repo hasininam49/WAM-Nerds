@@ -2,7 +2,7 @@ console.log('JavaScript file is loaded.');
 
 var alerted = localStorage.getItem('alerted') || '';
 if (alerted != 'yes') {
-alert("This website is under development if there are any issues please email me at wamnerds@gmail.com");
+alert("This website is under development if there are any issues please email me at thewamnerds@gmail.com");
 localStorage.setItem('alerted','yes');
 console.log("It worked")
 }
